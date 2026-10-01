@@ -21,6 +21,6 @@ for i in range(n):
 srz /= orc
 print('Всего записей: ',n)
 print('Кол-во ошибок: ', cheter)
-print('Кол0во превышений: ', pr)
+print('Кол-во превышений: ', pr)
 print('Макс показание', f'{maxn:.1f}')
 print('Ср. показание: ', f'{srz:.1f}')

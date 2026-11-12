@@ -97,3 +97,4 @@ print("\nЗадание 6")
 print("Форма numbers:", numbers.shape)
 print("Форма table:", table.shape)
 print("Форма transposed:", transposed.shape)
+# 

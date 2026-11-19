@@ -1,7 +1,7 @@
 import numpy as np
 
 def make_hours() -> list[int]:
-    return np.arrange(0, 22, 3).tolist()
+    return np.arange(0, 22, 3).tolist()
 
 
 def vector_report(values: list[float]) -> dict:
@@ -10,7 +10,7 @@ def vector_report(values: list[float]) -> dict:
         'third': arr[2].item(),
         'last': arr[-1].item(),
         'middle': arr[2:6].tolist(),
-        'every_second': arr[::2],
+        'every_second': arr[::2].tolist(),
         'reversed': arr[::-1].tolist()
     }
 
@@ -22,6 +22,7 @@ def change_vector(values: list[float]) -> list[float]:
 
 
 def cap_above(values: list[float], limit: float) -> list[float]:
+    arr = np.asarray(values, dtype=float).copy()
     arr[arr > limit] = limit
     return arr.tolist()
 
